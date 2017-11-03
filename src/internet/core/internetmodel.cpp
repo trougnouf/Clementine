@@ -38,7 +38,7 @@
 #include "internet/intergalacticfm/intergalacticfmservice.h"
 #include "internet/internetradio/savedradio.h"
 #include "internet/jamendo/jamendoservice.h"
-#include "internet/jamendo/jamendov3service.h"
+#include "internet/jamendov3/jamendov3service.h"
 #include "internet/magnatune/magnatuneservice.h"
 #include "internet/podcasts/podcastservice.h"
 #include "internet/somafm/somafmservice.h"

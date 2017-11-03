@@ -24,6 +24,10 @@
 
 #include "internet/core/internetservice.h"
 
+class NetworkAccessManager;
+class LibraryModel;
+class LibrarySearchProvider;
+
 class Jamendov3Service : public InternetService {
   Q_OBJECT
  public:
@@ -39,8 +43,15 @@ class Jamendov3Service : public InternetService {
   static const char* kDownloadAlbumUrl;
   static const char* kSearchUrl;
   static const char* kAlbumInfoUrl;
+  static const char* kTrackUrl;
 
-
-}
+private:
+ NetworkAccessManager* network_;
+ QMenu* context_menu_;
+ LibraryBackend* library_backend_;
+ LibraryFilterWidget* library_filter_;
+ LibraryModel* library_model_;
+ LibrarySearchProvider* search_provider_;
+};
 
 #endif  // INTERNET_JAMENDOV3_JAMENDOV3SERVICE_H_

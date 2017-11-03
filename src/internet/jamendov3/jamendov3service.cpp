@@ -23,6 +23,14 @@
 
 #include "jamendov3service.h"
 
+#include <QMenu>
+
+#include "core/network.h"
+#include "library/librarybackend.h"
+#include "library/libraryfilterwidget.h"
+#include "library/librarymodel.h"
+#include "globalsearch/librarysearchprovider.h"
+
 const char* Jamendov3Service::kServiceName = "Jamendov3";
 const char* Jamendov3Service::kApiClientId = "f4905164";
 const char* Jamendov3Service::kTrackUrl =
