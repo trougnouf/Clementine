@@ -38,6 +38,7 @@
 #include "internet/intergalacticfm/intergalacticfmservice.h"
 #include "internet/internetradio/savedradio.h"
 #include "internet/jamendo/jamendoservice.h"
+#include "internet/jamendo/jamendov3service.h"
 #include "internet/magnatune/magnatuneservice.h"
 #include "internet/podcasts/podcastservice.h"
 #include "internet/somafm/somafmservice.h"
@@ -85,6 +86,7 @@ InternetModel::InternetModel(Application* app, QObject* parent)
   AddService(new DigitallyImportedService(app, this));
   AddService(new IcecastService(app, this));
   AddService(new JamendoService(app, this));
+  AddService(new Jamendov3Service(app, this));
   AddService(new JazzRadioService(app, this));
   AddService(new MagnatuneService(app, this));
   AddService(new PodcastService(app, this));

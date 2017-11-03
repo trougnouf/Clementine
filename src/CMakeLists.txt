@@ -172,6 +172,7 @@ set(SOURCES
   internet/jamendo/jamendodynamicplaylist.cpp
   internet/jamendo/jamendoplaylistitem.cpp
   internet/jamendo/jamendoservice.cpp
+  internet/jamendov3/jamendov3service.cpp
   internet/core/localredirectserver.cpp
   internet/magnatune/magnatunedownloaddialog.cpp
   internet/magnatune/magnatuneplaylistitem.cpp
